@@ -2,9 +2,11 @@ import React from "react";
 import * as S from "./stilo"
 export default function Principal(){
     return( 
-        <div>
-
+        <>
+        <S.GlobalStyle/>
+        <section>
     <S.Header> 
+        <h2>RC</h2>
         <nav>
             <ul>
                 <li> About</li>
@@ -12,8 +14,12 @@ export default function Principal(){
                 <li>Subscribe</li>
             </ul>
         </nav>
-    </S.Header>
+        <div>
+            <h1>RECIPES</h1>
         </div>
+    </S.Header>
+        </section>
+        </>
 
     )
 }
