@@ -8,6 +8,7 @@ export default function Principal() {
         <>
             <S.GlobalStyle />
             <S.Header>
+                <div className="Menu"> 
                 <h2>RC</h2>
                 <nav>
                     <ul>
@@ -16,7 +17,8 @@ export default function Principal() {
                         <li>Subscribe</li>
                     </ul>
                 </nav>
-                <div>
+                </div>
+                <div className="Receita"> 
                     <h1>RECIPES</h1>
                 </div>
             </S.Header>

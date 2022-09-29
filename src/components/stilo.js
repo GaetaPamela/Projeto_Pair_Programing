@@ -10,11 +10,21 @@ export const GlobalStyle = createGlobalStyle`
 `
 export const Header = styled.header`
 display: flex;
-justify-content: flex-end;
+flex-direction:column;
 background-image:url(${Recipes});
 height: 145vh;
 background-size: 100%;
 background-repeat: no-repeat;
+.Menu{
+    width:100%;
+    height:50%;
+    display: flex;
+justify-content: space-between;
+border:solid red;
+
+
+}
+
 h2{
     position: relative;
     top: 3.5vh;
@@ -23,24 +33,24 @@ h2{
 }
 nav{
     display: flex;
-    justify-content: flex-end;
+    justify-content:center;
     align-items: center;
-    width: 91vw;
+    width: 60%;
     height: 15vh;
     ul{
         display: flex;
         justify-content: space-around;
         align-items: center;
         list-style: none;
-        width: 35vw;
+        width: 100%;
         height: 10vh;
         li{
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-end;
             font-size: 22px;
             cursor: pointer;
-            border: solid  transparent;
+           
             height: 8vh;
             width: 11vw;
             &:hover{
@@ -50,13 +60,47 @@ nav{
     }
 }
 h1{
-    position: absolute;
-    top: 460px;
-    right:415px;
+    display:flex;
+    justify-content: center;
     font-size: 110px;
     letter-spacing: 15px;
     color: #373737;
     font-weight: 500;
+}
+@media (max-width:800px){
+   
+    width:100%;
+
+
+    h2{
+        font-size:20px;
+        
+    }
+nav{
+    border:solid;  
+     width:70%;
+     justify-content:center;
+    
+}
+ul{
+    border:solid blue; 
+    width:100%;
+    justify-content: space-between;
+    
+}
+
+li{
+   
+    font-size: 1rem;
+
+}
+ .Receita{
+    h1{
+       font-size:80px; 
+    }
+
+     }
+
 }
 `
 export const Main = styled.main`
