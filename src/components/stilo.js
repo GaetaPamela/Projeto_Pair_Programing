@@ -20,9 +20,6 @@ background-repeat: no-repeat;
     height:50%;
     display: flex;
 justify-content: space-between;
-border:solid red;
-
-
 }
 
 h2{
@@ -35,7 +32,7 @@ nav{
     display: flex;
     justify-content:center;
     align-items: center;
-    width: 60%;
+    width: 45%;
     height: 15vh;
     ul{
         display: flex;
@@ -47,14 +44,13 @@ nav{
         li{
             display: flex;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: center;
             font-size: 22px;
             cursor: pointer;
-           
             height: 8vh;
             width: 11vw;
             &:hover{
-                border: solid black;
+                border: solid #373737;
             }
         }
     }
@@ -68,13 +64,9 @@ h1{
     font-weight: 500;
 }
 @media (max-width:800px){
-   
     width:100%;
-
-
     h2{
         font-size:20px;
-        
     }
 nav{
     border:solid;  
@@ -83,7 +75,6 @@ nav{
     
 }
 ul{
-    border:solid blue; 
     width:100%;
     justify-content: space-between;
     
@@ -106,7 +97,7 @@ li{
 export const Main = styled.main`
 position: relative;
 top: 4vh;
-height: 200vh;
+height: 300vh;
 background-color: #F2F4F1;
 display: flex;
 align-items: center;
@@ -114,7 +105,7 @@ justify-content: center;
 flex-direction: column;
 div{
     position: relative;
-    top: -43vh;
+    top: 8vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,15 +129,14 @@ div{
         transition: ease-in-out 0.4s;
     }
 }
-section{
+`
+export const FirstSection = styled.section`
     position: relative;
-    top: -38vh;
+    top: 14vh;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     height: 100vh;
-    border: solid;
-}
 `
 export const FigureBox = styled.figure`
 display: flex;
@@ -157,6 +147,11 @@ width: 29.2vw;
 height: 90vh;
 background-color: #ffff;
 box-shadow:  0px  4px  5px   grey;
+figure{
+    overflow: hidden;
+    width: 100%;
+    height: 45vh;
+}
 span{
     position: relative;
     top: 20vh;
@@ -178,7 +173,140 @@ figcaption{
 export const Images = styled.img`
 height: 45vh;
 transition: ease-in-out 0.5s;
+-webkit-transition: 0.6s ease;
 &:hover{
-transform: scale(110%);
+    transform: scale(1.2)
 };
+`
+export const SecondSection = styled.section`
+position: relative;
+top: 35vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #ffff;
+height: 100vh;
+div{
+    display: flex;
+    justify-content:space-around;
+    top: 2vh;
+    height: 60vh;
+}
+div span{
+    position: relative;
+    top: -1vh;
+    background-color: #373737;
+    width: 55px;
+    height: 5px;
+}
+div h3{
+    font-family: "Reem Kufi Ink", sans-serif;
+    top: 0vh;
+    font-size: 26px;
+}
+p{
+    width: 70%;
+}
+`
+export const ImageSecondSection = styled.img`
+position: relative;
+top: 2px;
+height: 100vh;
+`
+
+export const FormBox = styled.form`
+position: relative;
+top: 35vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 60vh;
+background-color:#DFE4DE ;
+
+gap: 10px;
+`
+
+export const Subscribe = styled.p`
+font-weight: bold;
+font-family: "Reem Kufi Ink", sans-serif;
+letter-spacing: 3px;
+font-size: 30px;
+`
+export const Newsletter = styled.p`
+font-weight: normal;
+font-size: 22px;
+letter-spacing: 2px;
+font-family: "Reem Kufi Ink", sans-serif;
+`
+export const Input = styled.input`
+font-size: 18px;
+padding-left: 20px;
+border: none;
+height: 11vh;
+width: 35vw;
+background-color:#EFF1EE;
+&:focus{
+outline: none;
+border: none;
+}
+&::placeholder{
+    font-size: 18px;
+}
+`
+export const Botao = styled.button`
+font-family: "Reem Kufi Ink", sans-serif;
+font-size: 18px;
+font-weight: 900;
+letter-spacing: 3px;
+position: relative;
+top: 14px;
+width: 12vw;
+height: 8vh;
+background-color:transparent;
+border: solid;
+cursor: pointer;
+transition: ease-in-out 0.6s;
+&:hover{
+    color: #ffff;
+    box-shadow: inset black 165px 0px;
+    border: solid black;
+}
+`
+export const Footer = styled.footer`
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
+top: 29vh;
+height: 35vh;
+width: 100%;
+background-color: #F2F4F1;
+`
+export const Navigation = styled.nav`
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 36vw;
+    list-style: none;
+}
+li{
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-family: "Questrial", sans-serif;
+}
+`
+export const IconsBox = styled.div`
+
+display: flex;
+justify-content: flex-end;
+gap: 10px;
+width: 20vw;
+`
+export const Icones = styled.img`
+height: 6vh;
+cursor: pointer;
 `
